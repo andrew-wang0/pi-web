@@ -7,7 +7,9 @@ const config = [
   ...defaultConfig,
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
-    ...reactPlugin.configs.flat.recommended,
+    plugins: {
+      react: reactPlugin,
+    },
     rules: {
       ...reactPlugin.configs.flat.recommended.rules,
       "react/react-in-jsx-scope": "off",
