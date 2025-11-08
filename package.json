@@ -12,7 +12,7 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --write"
+      "prettier --write --ignore-unknown"
     ]
   },
   "prettier": "@packages/prettier-config",
@@ -31,7 +31,7 @@
   },
   "packageManager": "pnpm@10.20.0",
   "engines": {
-    "node": "24.7.0",
+    "node": "22.21.0",
     "pnpm": "10.20.0"
   }
 }
